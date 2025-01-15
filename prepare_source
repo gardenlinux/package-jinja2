@@ -19,6 +19,6 @@ sed -i '/0002-fix-test_package_zip_list-on-3.13.patch/d' "$dir/src/debian/patche
 sed -i '/0003-disallow-invalid-characters-in-keys-to-xmlattr-filte.patch/d' "$dir/src/debian/patches/series"
 
 #builddepend
-sed -i 's/--with python3,sphinxdoc/--with python3,sphinxdoc,pyproject' "$dir/src/debian/rules"
+sed -i 's/--with python3,sphinxdoc/--with python3,sphinxdoc,pyproject/' "$dir/src/debian/rules"
 
 version="$version_orig-1"
