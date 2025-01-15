@@ -10,5 +10,6 @@ cp -rp $org_dir/debian $dir/src/debian
 
 sed -i '/py3.9-fix-collections-import.patch/d' "$dir/src/debian/patches/series"
 sed -i '/0002-docs-disable-sphinxcontrib.log_cabinet.patch/d' "$dir/src/debian/patches/series"
+sed -i '/0001-test-on-trio-fix-all-missing-aclose-related-warnings.patch/d' "$dir/src/debian/patches/series"
 
 version="$version_orig-1"
