@@ -8,9 +8,12 @@ trap 'cd / && rm -rf "$org_dir"' EXIT
 git clone --depth 1 --recurse-submodules -b "debian/$version" "https://salsa.debian.org/python-team/packages/jinja2.git" "$org_dir"
 cp -rp $org_dir/debian $dir/src/debian
 
+#errors
 sed -i '/py3.9-fix-collections-import.patch/d' "$dir/src/debian/patches/series"
 sed -i '/0002-docs-disable-sphinxcontrib.log_cabinet.patch/d' "$dir/src/debian/patches/series"
+#duplicated
 sed -i '/0001-test-on-trio-fix-all-missing-aclose-related-warnings.patch/d' "$dir/src/debian/patches/series"
 sed -i '/0002-fix-test_package_zip_list-on-3.13.patch/d' "$dir/src/debian/patches/series"
+sed -i '/0003-disallow-invalid-characters-in-keys-to-xmlattr-filte.patch/d' "$dir/src/debian/patches/series"
 
 version="$version_orig-1"
