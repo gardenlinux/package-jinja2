@@ -21,3 +21,4 @@ sed -i '/0003-disallow-invalid-characters-in-keys-to-xmlattr-filte.patch/d' "$di
 sed -i 's/--with dh-python,/dh-python,python3-pyproj,pybuild-plugin-pyproject,/' "$dir/src/debian/control"
 
 version="$version_orig-1"
+version_suffix=gl0
