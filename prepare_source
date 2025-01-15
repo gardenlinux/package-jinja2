@@ -18,6 +18,6 @@ sed -i '/0003-disallow-invalid-characters-in-keys-to-xmlattr-filte.patch/d' "$di
 
 #builddepend
 #sed -i 's/--with python3,sphinxdoc/--with python3,sphinxdoc,pyproject/' "$dir/src/debian/rules"
-sed -i 's/--with dh-python,/dh-python,python3-pyproj,/' "$dir/src/debian/control"
+sed -i 's/--with dh-python,/dh-python,python3-pyproj,pybuild-plugin-pyproject,/' "$dir/src/debian/control"
 
 version="$version_orig-1"
