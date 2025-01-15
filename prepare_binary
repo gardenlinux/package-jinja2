@@ -1,1 +1,1 @@
-apt-get install -y python3-pyproj pybuild-plugin-pyproject
+apt-get install -y python3-pyproj pybuild-plugin-pyproject flit sphinx python3-sphinxcontrib-log-cabinet
