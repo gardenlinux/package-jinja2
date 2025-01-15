@@ -1,4 +1,4 @@
-apt-get install pybuild-plugin-pyproject
+apt-get install -y pybuild-plugin-pyproject
 
 pkg=jinja2
 version_orig=3.1.5
