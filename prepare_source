@@ -11,4 +11,4 @@ cp -rp $org_dir/debian $dir/src/debian
 #errors - patches don't apply to 3.1.6 upstream
 sed -i '/py3.9-fix-collections-import.patch/d' "$dir/src/debian/patches/series"
 sed -i '/0002-docs-disable-sphinxcontrib.log_cabinet.patch/d' "$dir/src/debian/patches/series"
-
+version_suffix=gl0~bp1877
